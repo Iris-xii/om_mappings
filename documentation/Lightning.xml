@@ -648,5 +648,389 @@
       array contains, and the float stored in each bucket represents how many people of the total would 
       fall within said bucket.</summary>
     </member>
+    <!-- member name="M:class_135.method_258(class_221,class_221)">
+      <summary>TODO!</summary>
+      <param name="param_3350"></param>
+      <param name="param_3351"></param>
+    </member -->
+    <!-- member name="M:class_135.method_259">
+      <summary>TODO!</summary>
+    </member-->
+    <!-- member name="M:class_135.method_260(System.Int32,System.Int32)">
+      <summary>TODO!</summary>
+      <param name="param_3352"></param>
+      <param name="param_3353"></param>
+    </member -->
+    <member name="M:class_135.method_261(class_256,MeshVertex,MeshVertex,MeshVertex,MeshVertex)">
+      <summary>Renders a square mesh by specifying the mesh data at each of the corners and the texture to use.</summary>
+      <param name="param_3354">Texture to render.</param>
+      <param name="param_3355">Mesh vertex data for the top left corner.</param>
+      <param name="param_3356">Mesh vertex data for the top right corner</param>
+      <param name="param_3357">Mesh vertex data for the bottom right corner</param>
+      <param name="param_3358">Mesh vertex data for the bottom left corner</param>
+    </member>
+    <member name="M:class_135.method_262(class_256,Color,Matrix4)">
+      <summary>Render the given texture utilizing the provided transform matrix.</summary>
+      <param name="param_3359">Texture to render</param>
+      <param name="param_3360">Color to apply to the texture</param>
+      <param name="param_3361">Transformation matrix</param>
+    </member>
+    <member name="M:class_135.method_263(class_256,Color,Vector2,Vector2)">
+      <summary>Render the given texture by specifying its position and size.<br />
+      The co-ords of position are the bottom left corner of the texture.</summary>
+      <param name="param_3362">Texture to render</param>
+      <param name="param_3363">Color to apply to the texture</param>
+      <param name="param_3364">Position (bottom-left corner) of the texture</param>
+      <param name="param_3365">Size of the texture</param>
+    </member>
+    <member name="M:class_135.method_264(class_256,Color,Vector2,Vector2,Bounds2)">
+      <summary>Render the given texture by specifying its position, size, and additionally the 
+      texture coords/UVs to use.</summary>
+      <param name="param_3366">Texture to render</param>
+      <param name="param_3367">Color to apply to the texture</param>
+      <param name="param_8060">Position (bottom-left corner) of the texture</param>
+      <param name="param_8061">Size of the texture</param>
+      <param name="param_3370">Texture Cooods (UVs) to use when rendering the texture.</param>
+    </member>
+    <member name="M:class_135.method_265(class_256,Color,Bounds2,Matrix4)">
+      <summary>Render the given texture specifying its texture coords and a transformation matrix.</summary>
+      <param name="param_8062">Texture to render</param>
+      <param name="param_3371">Color to apply to the texture</param>
+      <param name="param_3372">Texture Cooods (UVs) to use when rendering the texture.</param>
+      <param name="param_3373">Transform matrix</param>
+    </member>
+    <member name="M:class_135.method_266(class_256,Color,Vector2,Vector2,Bounds2,enum_130,enum_1)">
+      <summary>Render the texture given its position, size, texture coords and orientation.</summary>
+      <param name="param_8063">Texture to render</param>
+      <param name="param_3375">Color to apply to the texture</param>
+      <param name="param_3376">Position (bottom-left corner) of the texture</param>
+      <param name="param_3377">Size of the texture</param>
+      <param name="param_3378">Texture Cooods (UVs) to use when rendering the texture.</param>
+      <param name="param_3379">Orientation of the texture</param>
+      <param name="param_3380">Flip to apply to the texture</param>
+    </member>
+    <member name="M:class_135.method_267(class_256,Color,Vector2,enum_130,enum_1)">
+      <summary>Render the texture given its position and orientation, in 1:1 size (the size of the 
+      rendered texture is the same as the size of the texture itself)</summary>
+      <param name="param_8064">Texture to render</param>
+      <param name="param_8065">Color to apply to the texture</param>
+      <param name="param_8066">Position (bottom-left corner) of the texture</param>
+      <param name="param_3382">Orientation of the texture</param>
+      <param name="param_3383">Flip to apply to the texture</param>
+    </member>
+    <member name="M:class_135.method_268(class_256,Color,Vector2,Bounds2)">
+      <summary>Render the texture, masked by the given bounds, such that parts of the texture that 
+      aren't in the specified bounds aren't rendered at all.<br />
+      The size of the render is set to the size of the texture itself.</summary>
+      <param name="param_3384">Texture to render</param>
+      <param name="param_8067">Color to apply to the texture</param>
+      <param name="param_3385">Position (bottom-left corner) of the texture</param>
+      <param name="param_3386">Mask to apply</param>
+    </member>
+    <member name="M:class_135.method_269(class_256,Color,Vector2,Vector2,Bounds2)">
+      <summary>Render the texture, masked by the given bounds, such that parts of the texture that 
+      aren't in the specified bounds aren't rendered at all.</summary>
+      <param name="param_3387">Texture to render</param>
+      <param name="param_3388">Color to apply to the texture</param>
+      <param name="param_3389">Position (bottom-left corner) of the texture</param>
+      <param name="param_3390">Size of the texture</param>
+      <param name="param_3391">Mask to apply</param>
+    </member>
+    <member name="M:class_135.method_270(class_256,Color,Vector2,Vector2)">
+      <summary>Fills the square defined by <paramref name="param_3393" /> and <paramref name="param_3394" /> with 
+      the given texture, repeated however many times is necessary to fill the square, at 1:1 scale 
+      (without stretching or distorting the texture)</summary>
+      <param name="param_3392">Texture to render</param>
+      <param name="param_8068">Color to apply to the texture</param>
+      <param name="param_3393">Position (bottom-left corner) of the texture</param>
+      <param name="param_3394">Size of the rect that will be filled with the repeating texture</param>
+    </member>
+    <member name="M:class_135.method_271(class_256,Color,Vector2)">
+      <summary>Render the given texture at 1:1 scale (the size of the rendered region equals the size of the texture)</summary>
+      <param name="param_3395">Texture to render</param>
+      <param name="param_8069">Color to apply to the texture</param>
+      <param name="param_3396">Position (bottom-left corner) of the texture</param>
+    </member>
+    <member name="M:class_135.method_272(class_256,Vector2)">
+      <summary>Render the given texture at 1:1 scale (the size of the rendered region equals the size of the texture)</summary>
+      <param name="param_3397">Texture to render</param>
+      <param name="param_3398">Position (bottom-left corner) of the texture</param>
+    </member>
+    <!-- member name="M:class_135.method_273(class_256,Color,Vector2,Vector2,Vector2)">
+      <summary>TODO!</summary>
+      <param name="param_8070"></param>
+      <param name="param_3399"></param>
+      <param name="param_3400"></param>
+      <param name="param_3401"></param>
+      <param name="param_3402"></param>
+    </member-->
+    <!-- member name="M:class_135.method_274(class_256,struct_0,Vector2,Vector2,Vector2)">
+      <summary>TODO!</summary>
+      <param name="param_3403"></param>
+      <param name="param_8071"></param>
+      <param name="param_8072"></param>
+      <param name="param_3406"></param>
+      <param name="param_3407"></param>
+    </member-->
+    <member name="M:class_135.method_275(class_256,Color,Bounds2)">
+      <summary>Renders the given texture as a 9-slice, often used to render rectangles and borders without distorting the corners or edges of the texture.</summary>
+      <param name="param_8073">Texture to render</param>
+      <param name="param_3409">Color to apply</param>
+      <param name="param_3410">Bounds of the rectangle to render</param>
+    </member>
+    <member name="M:class_135.method_276(class_256,Color,Vector2,Vector2)">
+      <summary>Renders the given texture as a 9-slice, often used to render rectangles and borders without distorting the corners or edges of the texture.</summary>
+      <param name="param_3411">Texture to render</param>
+      <param name="param_8074">Color to apply</param>
+      <param name="param_3412">Position to render at</param>
+      <param name="param_8075">Size of the rectangle</param>
+    </member>
+    <member name="M:class_135.method_278(Color,System.Single,System.Single,System.Single,System.Single)">
+      <summary>Renders a rect of the given color</summary>
+      <param name="param_3423">Color to render</param>
+      <param name="param_3424">Position X</param>
+      <param name="param_3425">Position Y</param>
+      <param name="param_3426">Scale X</param>
+      <param name="param_3427">Scale Y</param>
+    </member>
+    <member name="M:class_135.method_279(Color,Vector2,Vector2)">
+      <summary>Renders a rect of the given color</summary>
+      <param name="param_3428">Color to render</param>
+      <param name="param_8076">Position to render at</param>
+      <param name="param_3430">Scale of the colored rect</param>
+    </member>
+    <member name="M:class_135.method_280(Color,Bounds2)">
+      <summary>Renders a rect of the given color</summary>
+      <param name="param_3431">Color to render</param>
+      <param name="param_3432">Rect to render as the given color</param>
+    </member>
+    <member name="M:class_135.method_281(Color,Vector2,Vector2,System.Single)">
+      <summary>Renders a colored border around the defined rect</summary>
+      <param name="param_3433">Color of the border</param>
+      <param name="param_3434">Position of the rect</param>
+      <param name="param_3435">Size of the rect</param>
+      <param name="param_3436">Width of the colored line</param>
+    </member>
+    <member name="M:class_135.method_282(Color,Bounds2,System.Single)">
+      <summary>Renders a colored border around the defined rect</summary>
+      <param name="param_3437">Color of the border</param>
+      <param name="param_3438">Rect to render a colored border around.</param>
+      <param name="param_3439">Width of the colored line</param>
+    </member>
+    <member name="M:class_135.method_283(Color,Bounds2)">
+      <summary>Renders a colored border of width 1 around the defined rect</summary>
+      <param name="param_3440">Color of the border</param>
+      <param name="param_3441">Rect to render a colored border around.</param>
+    </member>
+    <member name="M:class_135.method_284(Color,Bounds2)">
+      <summary>Renders a rect of the given color.</summary>
+      <param name="param_3442">Color to render</param>
+      <param name="param_3443">Bounds of the rect</param>
+    </member>
+    <member name="M:class_135.method_285(Color,Vector2,System.Single)">
+      <summary>Renders a colored rect centered in the given position</summary>
+      <param name="param_3444">Color to render</param>
+      <param name="param_3445">Position</param>
+      <param name="param_3446">'Radius' of the rect to render (half of its length)</param>
+    </member>
+    <member name="M:class_135.method_286(Vector2,Vector2,System.Single,Color)">
+      <summary>Draws a colored rectangle of the given width, orientated such that it connects the two 
+      given points.</summary>
+      <param name="param_3447">First point to connect with the rectangle.</param>
+      <param name="param_8077">Second point to connect with the rectangle.</param>
+      <param name="param_3449">Width of the colored rect</param>
+      <param name="param_3450">Color of the rect</param>
+    </member>
+    <member name="M:class_135.method_287(Vector2,Vector2,class_256,Color)">
+      <summary>Draws a texture on <paramref name="param_3451" /> at 1:1 size, oriented towards 
+      <paramref name="param_8078" />.</summary>
+      <param name="param_3451">First point to connect and where the texture itself will be drawn</param>
+      <param name="param_8078">Second point, that the texture will be oriented towards.</param>
+      <param name="param_3453">Texture to draw</param>
+      <param name="param_8079">Color to apply to the texture</param>
+    </member>
+    <member name="M:class_135.method_289(System.Char,Vector2,class_233,Color)">
+      <summary>Renders the given character. Position is the top-left corner of the final output character.</summary>
+      <param name="param_3456">Character to render</param>
+      <param name="param_3457">Top-left corner of the final character. (The character will be rendered down and towards the right)</param>
+      <param name="param_3458">Font to use</param>
+      <param name="param_8080">Color</param>
+    </member>
+    <member name="M:class_135.method_290(System.String,Vector2,class_1,Color,enum_0,System.Single,System.Single,System.Single,System.Single,System.Int32,Color,class_256,System.Int32,System.Boolean,System.Boolean)">
+      <summary>Renders text, calculates the bounds it would take, or both.</summary>
+      <param name="param_3460">Text to draw</param>
+      <param name="param_3461">Position to draw the text at</param>
+      <param name="param_3462">Font to use</param>
+      <param name="param_3463">Color of the text</param>
+      <param name="param_3464">Alignment of the text</param>
+      <param name="param_3465">Amount of space to leave between one line and the next</param>
+      <param name="param_3466">Multiplier to leave between one paragraph and the next, used for example when the input is <c>\n\n</c></param>
+      <param name="param_3467">Width per line allowed. If this value is too low, the game will hang.</param>
+      <param name="param_3468">The length after which text is truncated to fit</param>
+      <param name="param_3469">Offset of the text shadow, the higher this is the 'further apart' the shadow will appear from the text. Set to 0 for no shadow.</param>
+      <param name="param_3470">The color of the shadow</param>
+      <param name="param_3471">Gradient texture to use when rendering this text. Set to null for no gradient.</param>
+      <param name="param_3472">Max amount of characters to render</param>
+      <param name="param_3473">Whether to also calculate the bounds of the drawn text</param>
+      <param name="param_3474">Whether to render the text</param>
+      <returns>The bounds of the rendered text, if <paramref name="param_3473" /> is true</returns>
+    </member>
+    <member name="M:class_135.method_291(System.String,Vector2,class_1,enum_0,System.Single,System.Single,System.Single,System.Single)">
+      <summary>Calculates the bounds the given text would occupy, if you were to render it.</summary>
+      <param name="param_3475">Text to draw</param>
+      <param name="param_8081">Position to draw the text at</param>
+      <param name="param_3476">Font to use</param>
+      <param name="param_3477">Alignment of the text</param>
+      <param name="param_3478">Amount of space to leave between one line and the next</param>
+      <param name="param_3479">Multiplier to leave between one paragraph and the next, used for example when the input is <c>\n\n</c></param>
+      <param name="param_3480">Width per line allowed. If this value is too low, the game will hang.</param>
+      <param name="param_3481">The length after which text is truncated to fit</param>
+      <returns>The bounds of the text, were it to be rendered</returns>
+    </member>
+    <member name="M:class_135.method_292(System.String,Vector2,class_1,Color,enum_0,System.Single,System.Single,System.Single,System.Single,System.Int32,Color,class_256,System.Int32)">
+      <summary>Renders the given text, vertically centered around the given position.</summary>
+      <param name="param_3482">Text to draw</param>
+      <param name="param_3483">Where to render the text, vertically centered.</param>
+      <param name="param_3484">Font to use</param>
+      <param name="param_3485">Color of the text</param>
+      <param name="param_3486">Alignment of the text</param>
+      <param name="param_3487">Amount of space to leave between one line and the next</param>
+      <param name="param_3488">Multiplier to leave between one paragraph and the next, used for example when the input is <c>\n\n</c></param>
+      <param name="param_3489">Width per line allowed. If this value is too low, the game will hang.</param>
+      <param name="param_3490">The length after which text is truncated to fit</param>
+      <param name="param_3491">Offset of the text shadow, the higher this is the 'further apart' the shadow will appear from the text. Set to 0 for no shadow.</param>
+      <param name="param_3492">The color of the shadow</param>
+      <param name="param_3493">Gradient texture to use when rendering this text. Set to null for no gradient.</param>
+      <param name="param_3494">Max amount of characters to render</param>
+    </member>
+    <member name="M:class_135.method_294(Rotation2)">
+      <summary>Turns a given <see cref="T:Rotation2" /> into its equivalent orientation.</summary>
+      <param name="param_3510">Rotation2</param>
+      <returns>The orientation such a <see cref="T:Rotation2" /> translates to.</returns>
+    </member>
+    <member name="M:class_195.method_519(Index2,Vector2,Vector2,System.Single)">
+      <summary>Obtain a matrix that can be used to render textures onto this part.</summary>
+      <param name="param_3825">Size of the texture that will be drawn</param>
+      <param name="param_3826">Offset, in pixel distance from the part's origin</param>
+      <param name="param_3827">Position to pivot around, if a rotation is provided</param>
+      <param name="param_3828">Rotation to apply</param>
+      <returns>Output transform Matrix</returns>
+    </member>
+    <member name="M:class_195.method_520(Index2,Vector2,Vector2,Vector2,System.Single)">
+      <summary>Obtain a matrix that can be used to render textures onto this part.</summary>
+      <param name="param_3829">Size of the texture that will be drawn</param>
+      <param name="param_3830">Offset, in pixel distance from the part's origin</param>
+      <param name="param_3831">Additional pixel offset for the texture alone.</param>
+      <param name="param_3832">Position to pivot around, if a rotation is provided</param>
+      <param name="param_3833">Rotation to apply</param>
+      <returns>Output transform Matrix</returns>
+    </member>
+    <member name="M:class_195.method_521(class_256,Vector2)">
+      <summary>Render a certain texture onto the part. The texture is drawn 
+      with its bottom-left corner at <paramref name="param_3835" />. 0,0 means "the center 
+      of the central hex of this part".<br />
+      The texture rotates and moves along with the rest of the part.</summary>
+      <param name="param_3834">Texture to render</param>
+      <param name="param_3835">Offset to render the texture at</param>
+    </member>
+    <member name="M:class_195.method_522(class_256,Vector2,System.Single)">
+      <summary>Render a certain texture onto the part. The texture is drawn 
+      with its bottom-left corner at <paramref name="param_3837" />. 0,0 means "the center 
+      of the central hex of this part".<br />
+      The texture rotates and moves along with the rest of the part.</summary>
+      <param name="param_3836">Texture to render</param>
+      <param name="param_3837">Offset to render the texture at</param>
+      <param name="param_3838">Rotation to apply to the texture</param>
+    </member>
+    <member name="M:class_195.method_523(class_256,Vector2,Vector2,System.Single)">
+      <summary>Render a certain texture onto the part. The texture is drawn 
+      with its bottom-left corner at <paramref name="param_3839" />. 0,0 means "the center 
+      of the central hex of this part".<br />
+      The texture rotates and moves along with the rest of the part.</summary>
+      <param name="param_8137">Texture to render</param>
+      <param name="param_3839">Offset to render the texture at</param>
+      <param name="param_3840">Pivot position to rotate the texture around</param>
+      <param name="param_3841">Rotation to apply to the texture</param>
+    </member>
+    <member name="M:class_195.method_524(class_256,System.Single,System.Single,System.Single)">
+      <summary>Function utilized to render one of the piston segments and quite specialized to this task alone.<br />
+      This function will draw the defined texture such that the *center* of its left edge is at the center of the 
+      0,0 hex of this part, with the rest of the texture extending towards the direction arms normally 
+      extend in (right, when no rotation has been applied to the part). If all float params are 0, the texture 
+      is simply drawn in full as explained.<br /><br />
+      To explain how this works imagine there is a line to the right after which the 
+      texture is truncated and isn't displayed anymore. (The line is really just a subtraction, though)
+      When all float values are 0, this coincides with the right edge of the texture.<br /><paramref name="param_3843" /> nudges the texture towards the right without moving said 'truncation line'.
+      If everything else is set to 0, this will cause the texture to get cut off.<br /><paramref name="param_3844" /> moves the 'truncation line' towards the *left*<br /><paramref name="param_3845" /> Makes the 'truncation line' advance towards the right instead.<br /><paramref name="param_3845" /> is generally set to the current length of this piston, in pixels, and changes
+       as the piston expands and retracts.<br /><br /><paramref name="param_3843" /> and <paramref name="param_3844" /> are generally set as constants in vanilla, 
+      chosen such that the 'truncation line' reveals the underlying texture at the correct time, with 
+      <paramref name="param_3845" /> being controlled by the length of the piston.
+      <!-- There's probably a better explanation hiding in here or a better way to think about this.
+      Hopefully this is good enough for now though. --></summary>
+      <param name="param_3842">Texture to render</param>
+      <param name="param_3843">Moves the texture towards the right without moving the 'truncation line'</param>
+      <param name="param_3844">Moves the 'truncation line' towards the left.</param>
+      <param name="param_3845">Current length of the piston in pixels</param>
+    </member>
+    <member name="M:class_195.method_525(class_256,Vector2,HexIndex,System.Single)">
+      <summary>Renders a certain texture onto the part, centered on <paramref name="param_3848" />.<br /><paramref name="param_3849" /> pivots around the hex 0,0 of this part.</summary>
+      <param name="param_3846">Texture to render</param>
+      <param name="param_3847">Offset for the texture</param>
+      <param name="param_3848">Grid position to draw this texture at</param>
+      <param name="param_3849">Rotation to apply</param>
+    </member>
+    <member name="M:class_195.method_526(class_256,HexIndex,Vector2,Vector2,System.Single)">
+      <summary>Render a certain texture onto the part. The texture is drawn 
+      with its bottom-left corner at <paramref name="param_3852" /> relative to 
+      the chosen hex (<paramref name="param_3851" />). 0,0 means "the center 
+      of the chosen hex".<br />
+      The texture rotates and moves along with the rest of the part.</summary>
+      <param name="param_3850">Texture to render</param>
+      <param name="param_3851">Hex offset</param>
+      <param name="param_3852">Texture offset</param>
+      <param name="param_3853">Position around which to pivot around when rotating</param>
+      <param name="param_3854">Rotation to apply</param>
+    </member>
+    <!-- Another highly specialized rendering method, bit of a doozy also -->
+    <!-- member name="M:class_195.method_527(class_126,HexIndex,Vector2,Vector2,System.Single)">
+      <summary>TODO!</summary>
+      <param name="param_3855"></param>
+      <param name="param_3856"></param>
+      <param name="param_3857"></param>
+      <param name="param_3858"></param>
+      <param name="param_3859"></param>
+    </member-->
+    <member name="M:class_195.method_528(class_256,HexIndex,Vector2)">
+      <summary>Renders a given texture in such a way that it rotates to face the light source, useful for things 
+      such as bowls that are rotationally symmetric and have their lightning drawn into the texture itself.</summary>
+      <param name="param_3860">Texture to render.</param>
+      <param name="param_3861">Hex to draw the texture at</param>
+      <param name="param_3862">Additional offset to apply. Note that this can interact a bit strangely 
+      with the rotation as it doesn't seem to move the pivot point.</param>
+    </member>
+    <member name="M:class_195.method_529(class_256,HexIndex,Vector2)">
+      <summary>Renders a given texture in such a way that it always stays upright, and never rotates along 
+      with the rest of the part. Useful for alchemical symbols and other such elements that should look 
+      the same no matter which way the part is rotated.</summary>
+      <param name="param_8138">Texture to render.</param>
+      <param name="param_3863">Hex to draw the texture at.</param>
+      <param name="param_3864">Additional offset to apply.</param>
+    </member>
+    <member name="M:class_195.method_530(class_256,HexIndex,System.Single)">
+      <summary>Draws the given texture as a shadow, which is to say slightly transparent and below 
+      the given hex.</summary>
+      <param name="param_3865">Texture to render.</param>
+      <param name="param_3866">Hex to draw the texture at.</param>
+      <param name="param_3867">Downwards offset to apply to the shadow. Higher values make the part look like 
+      it's higher up in the air.</param>
+    </member>
+    <member name="M:class_195.method_531(class_256,class_256,HexIndex,System.Single)">
+      <summary>Utilized to render bonder cylinders. This function will draw the bonder cylinder such that 
+      it connects the given <paramref name="param_3870" /> with the one immediately to the right ( hexPos+(1,0) )</summary>
+      <param name="param_3868">Lightmap of the texture to render</param>
+      <param name="param_3869">Texture to render</param>
+      <param name="param_3870">Hex to draw the texture at.</param>
+      <param name="param_3871">Rotation to apply, around the center of the given hex.</param>
+    </member>
   </members>
 </doc>
